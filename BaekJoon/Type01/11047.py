@@ -9,11 +9,11 @@ def main():
     
     n, k = map(int, sys.stdin.readline().strip().split())
     
-    money_arr = [int(sys.stdin.readline().strip()) for _ in range(n)]
-    money_arr.sort(reverse=True)
+    money_list = [int(sys.stdin.readline().strip()) for _ in range(n)]
+    money_list.sort(reverse=True)
     
     cnt = 0
-    for money in money_arr:
+    for money in money_list:
         
         if k >= money:
             q, r = divmod(k, money)
